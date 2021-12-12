@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.pp.fragment1"
+        android:label="@string/main"
+        tools:layout="@layout/fragment_fragment1" >
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_fragment1_to_fragment3"
+            app:destination="@id/fragment3" />
+        <action
+            android:id="@+id/action_fragment1_to_fragment4"
+            app:destination="@id/fragment4" />
+        <action
+            android:id="@+id/action_fragment1_to_fragment_cut_task"
+            app:destination="@id/fragment_cut_task" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.pp.fragment2"
+        android:label="@string/notebook"
+        tools:layout="@layout/fragment_fragment2" />
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.pp.fragment3"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_fragment3" />
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.pp.fragment4"
+        android:label="@string/other"
+        tools:layout="@layout/fragment_fragment4" />
+    <fragment
+        android:id="@+id/fragment_cut_task"
+        android:name="com.example.pp.Fragment_cut_task"
+        android:label="fragment_cut_task"
+        tools:layout="@layout/fragment_cut_task" />
+</navigation>

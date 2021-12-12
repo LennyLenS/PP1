@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/CreatePLan"
+            android:layout_width="370dp"
+            android:layout_height="80dp"
+            android:background="@color/design_default_color_error"
+            android:backgroundTint="@color/teal_200"
+            android:onClick="CreatePlan"
+            android:text="@string/create_plane"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.115"
+            app:strokeColor="#CDDC39" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="370dp"
+            android:layout_height="80dp"
+            android:background="#DD0D0D"
+            android:backgroundTint="#850B0B"
+
+            android:onClick="currentTask"
+            android:text="Текущие задачи"
+            android:textColorHighlight="#BD1515"
+            android:textColorLink="#F08C2BAF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/CreatePLan"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="@+id/CreatePLan"
+            app:layout_constraintTop_toBottomOf="@+id/CreatePLan"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="openCalendar"
+            android:layout_marginEnd="10dp"
+            android:text="Календарь"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:text="Заметки"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
